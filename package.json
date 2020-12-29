@@ -1,0 +1,17 @@
+{
+  "name": "npmtests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "execute": "node ./dist/index.js",
+    "build": "tsc && npm run execute",
+    "postbuild": "rm -rf ./dist && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.16",
+    "typescript": "^4.1.3"
+  }
+}
